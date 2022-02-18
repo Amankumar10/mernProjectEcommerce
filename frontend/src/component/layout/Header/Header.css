@@ -1,0 +1,343 @@
+.header {
+  height: 50px;
+  display: flex;
+ 
+  background-color:rgb(234,27,37);
+  padding-left: 35%;
+
+  top: 0;
+  z-index: 100;
+}
+
+
+/* 
+nav{
+  display: inline-block;
+  width: 100%;
+  float:left;
+  text-align: center;
+  margin-bottom:121px ;
+} */
+
+
+nav ul li{
+  display: inline-block;
+  padding: 25px 35px;
+}
+
+
+nav ul li a{
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* margin-right: 123px; */
+}
+
+nav ul li a:after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width:100%;
+  height:1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin:right;
+  transition: transform ease 0.5s;
+}
+
+
+nav ul li a:hover:after{
+  transform:scaleX(1);
+  transform-origin:left;
+  /* color: #e72838; */
+}
+
+
+
+/* submenu */
+
+
+
+
+
+.submenu{
+  position: absolute;
+  min-width: 0px;
+  background-color: #fff;
+  box-shadow: 0 5px 12px #ebebeb ;
+  margin-top:0;
+  margin-left: -15px;
+  z-index: -99;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.submenu li{
+  display: block;
+  text-align: left;
+  margin:15px;
+  padding:0;
+}
+
+.submenu li a{
+  font-size: 12px;
+  /* margin-right:23px ; */
+  
+  font-weight: 600;
+  
+}
+
+nav ul li:hover .submenu{
+  z-index: 99;
+  opacity: 1;
+  margin-top:25px;
+  
+}
+
+
+
+/* 
+@media  screen and (max-width:930px) {
+  .headeres{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media  screen and (max-width:600px) {
+  .headeres{
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+} */
+
+
+.headeres {
+  height: 90px;
+  display: flex;
+
+  background-color: #f2d5d9;
+  position: sticky;
+  top: 0;
+  
+  z-index: 100;
+}
+
+
+
+#headeres1:hover{
+  background-color: rgb(55, 48, 48);
+}
+
+
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  /* gap: 10%; */
+  background-color: rgb(234,27,37) ;
+  fontSize: "4px"
+}
+
+/* .white{
+  background-color: #f5edee;
+} */
+
+.headers {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(234,27,37);
+  top: 0;
+  /* fontSize: 4px; */
+  /* position: sticky; */
+  /* z-index: 100; */
+}
+
+/* .headers1 {
+  height: 35px;
+  color: rgb(252, 246, 246);
+  display: flex;
+  align-items: center;
+ 
+  background-color: rgb(234,27,37);
+  top: 0;
+} */
+
+
+.fa {
+  font-size: 1.2em;
+  padding: 0.1em 0.4em;
+  color: #ece6e6;
+}
+.header__logo {
+  width: 250px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+  padding-left: 3px;
+}
+
+.header__search {
+  display: flex;
+  flex: 0.7;
+  /* border-left-4: 20px; */
+  margin-left:90px ;
+  overflow: hidden;
+  margin-top: 7px;
+  
+  /* align-items: center; */
+  
+}
+
+.header__searchInput {
+  height: 20px !important;
+  padding: 10px;
+  /* border: none; */
+  width: 100%;
+  overflow: hidden;
+  /* border-radius: 20px; */
+  border: 2px
+}
+
+.header__searchIcon {
+  padding: 8px;
+  border: 1px;
+  height: 22px !important;
+  
+  color: #fcf6f6;
+  background-color: #5e5757;
+  cursor: pointer;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* .header__nav {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+.second-txt {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+
+/* @media screen and (max-width: 600px) {
+  .headeres  {
+    font-size: 7vmax;
+  }
+} */
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(234,27,37);
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  /* padding-left: 134px; */
+  font-size: 16px;
+  border: none;
+  /* space-between:32px; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;color:rgb(22, 20, 20);}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(55, 48, 48);}
+
+
+
+
+
+
+
+
+/* user option style */
+
+.speedDial {
+  /* position: absolute; */
+  right: 3vmax;
+  top: 3vmax;
+  padding-top: 23px;
+
+
+
+  margin-left: -53px;
+  margin-right:17px ;
+  /* margin-right: -93px; */
+  /* fontSize: 14px;
+  marginTop: 0.1px; */
+  /* marginRight: 54px; */
+   
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
